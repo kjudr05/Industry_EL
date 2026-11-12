@@ -1,0 +1,19 @@
+{
+  "regression": [
+    {
+      "model": "LSTM Regressor",
+      "MAE": 4.4145827293396,
+      "RMSE": 5.469982596863115,
+      "R2": 0.1159282922744751
+    }
+  ],
+  "classification": [
+    {
+      "model": "LSTM Classifier",
+      "Accuracy": 0.88,
+      "Precision_macro": 0.9395973154362416,
+      "Recall_macro": 0.5263157894736842,
+      "F1_macro": 0.5178571428571429
+    }
+  ]
+}

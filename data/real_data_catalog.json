@@ -1,0 +1,77 @@
+{
+  "phase": "12A",
+  "purpose": "Acquire and document public measured datasets before cleaning/modeling.",
+  "datasets": [
+    {
+      "dataset_id": "usda_sweetpotato_chip_texture_fat",
+      "title": "Sweetpotato chip texture and fat content and the impact of composition and glass transition temperature",
+      "source": "USDA Agricultural Research Service / Data.gov",
+      "url": "https://catalog.data.gov/dataset/data-from-sweetpotato-chip-texture-and-fat-content-and-the-impact-of-composition-and-glass",
+      "download_url": "https://ndownloader.figshare.com/files/64495524",
+      "license": "CC0 (as listed by Data.gov)",
+      "published_or_updated": "Catalog updated 2026-05-15; study data cover 90 sweetpotato clones",
+      "format": "CSV",
+      "measured_variables": [
+        "chip breaking force/texture",
+        "chip fat content",
+        "chip glass-transition temperature",
+        "raw dry matter",
+        "raw sugar",
+        "raw starch",
+        "raw pectin",
+        "pectin degree of methylation"
+      ],
+      "domain": "sweetpotato chips",
+      "role": "Real measured material/quality relationship dataset",
+      "limitations": [
+        "Sweetpotato, not ordinary potato; retain its domain label.",
+        "Small experimental sample compared with synthetic batches.",
+        "No continuous factory sensor time series."
+      ]
+    },
+    {
+      "dataset_id": "mendeley_frying_oil",
+      "title": "Frying oil data",
+      "source": "Mendeley Data; Yumei Li",
+      "url": "https://data.mendeley.com/datasets/4k7b395yxx/1",
+      "download_url": null,
+      "license": "CC BY 4.0",
+      "published_or_updated": "Published 2020-10-12, version 1",
+      "format": "Three CSV files (download all from source page)",
+      "measured_variables": [
+        "acid value",
+        "carbonyl value",
+        "total polar compounds",
+        "frying temperature (160, 175, 190, 205, 220 \u00b0C)",
+        "frying time (0\u201330 hours)"
+      ],
+      "domain": "potato-chip frying oil",
+      "role": "Real oil-degradation measurements",
+      "limitations": [
+        "Oil-quality targets are not equivalent to finished-chip quality.",
+        "Do not join rows to synthetic batches without a defensible key."
+      ]
+    },
+    {
+      "dataset_id": "mendeley_potato_frying_color",
+      "title": "Influence of agronomic parameters and storage parameters on the frying color of French fry potatoes (Solanum tuberosum L.)",
+      "source": "Mendeley Data",
+      "url": "https://data.mendeley.com/datasets/nstgdfbxsh/1",
+      "download_url": null,
+      "license": "CC BY 4.0",
+      "published_or_updated": "Published 2024-10-01, version 1",
+      "format": "Download files from source page",
+      "measured_variables": [
+        "frying color (R/G ratio)",
+        "reducing sugar in selected samples",
+        "agronomic and storage parameters"
+      ],
+      "domain": "French-fry potato quality (not potato chips)",
+      "role": "Real raw-material/storage-to-frying-color dataset",
+      "limitations": [
+        "French-fry test is not the same product/process as thin potato chips.",
+        "Retain product/process distinction in reports."
+      ]
+    }
+  ]
+}

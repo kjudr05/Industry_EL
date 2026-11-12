@@ -1,0 +1,92 @@
+{
+  "phase": "12E",
+  "created_utc": "2026-10-20T08:39:45.542356+00:00",
+  "dataset_name": "real_dataset",
+  "source_class": "externally_sourced_real_data",
+  "task": "regression",
+  "target": "measured_quality",
+  "features": [
+    "process_temp",
+    "frying_time"
+  ],
+  "usable_rows": 80,
+  "folds": 3,
+  "random_state": 42,
+  "validation": "Shuffled K-fold cross-validation; preprocessing fitted separately within each fold via sklearn Pipeline.",
+  "scores": [
+    {
+      "model": "Random Forest",
+      "status": "ok",
+      "metrics": {
+        "mae": {
+          "mean": 0.11093673682500171,
+          "std": 0.00698316755746243,
+          "folds": [
+            0.1028779415672359,
+            0.11520381781605843,
+            0.1147284510917108
+          ]
+        },
+        "rmse": {
+          "mean": 0.1394067675473572,
+          "std": 0.009862857476934663,
+          "folds": [
+            0.1339110698538941,
+            0.15079313118292104,
+            0.13351610160525645
+          ]
+        },
+        "r2": {
+          "mean": 0.8775280037566197,
+          "std": 0.0162174204306891,
+          "folds": [
+            0.8652627050950508,
+            0.8714059983806153,
+            0.8959153077941928
+          ]
+        }
+      },
+      "error": null
+    },
+    {
+      "model": "ANN (MLP)",
+      "status": "ok",
+      "metrics": {
+        "mae": {
+          "mean": 0.10737630103221069,
+          "std": 0.017283468470613086,
+          "folds": [
+            0.08742158524479417,
+            0.11707930375966684,
+            0.11762801409217105
+          ]
+        },
+        "rmse": {
+          "mean": 0.1320053339600282,
+          "std": 0.018090001682867056,
+          "folds": [
+            0.11165613650235523,
+            0.14626414411919125,
+            0.13809572125853806
+          ]
+        },
+        "r2": {
+          "mean": 0.8913309655518374,
+          "std": 0.013851239016507184,
+          "folds": [
+            0.9063257861120707,
+            0.8790144952422945,
+            0.8886526153011469
+          ]
+        }
+      },
+      "error": null
+    }
+  ],
+  "limitations": [
+    "Cross-validation estimates performance within this dataset, not external industrial generalization.",
+    "Small datasets may have high fold-to-fold variance.",
+    "Feature and target selection must follow the source study and avoid leakage.",
+    "Synthetic factory records are excluded from these scores."
+  ]
+}

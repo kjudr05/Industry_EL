@@ -1,0 +1,58 @@
+{
+  "phase": "12E",
+  "created_utc": "2026-10-20T08:39:59.138530+00:00",
+  "dataset_name": "unit_test_real",
+  "source_class": "externally_sourced_real_data",
+  "task": "regression",
+  "target": "quality_target",
+  "features": [
+    "measured_temp",
+    "measured_time"
+  ],
+  "usable_rows": 60,
+  "folds": 3,
+  "random_state": 42,
+  "validation": "Shuffled K-fold cross-validation; preprocessing fitted separately within each fold via sklearn Pipeline.",
+  "scores": [
+    {
+      "model": "Random Forest",
+      "status": "ok",
+      "metrics": {
+        "mae": {
+          "mean": 0.1287063203910095,
+          "std": 0.051942758165202475,
+          "folds": [
+            0.08380015605171715,
+            0.11672646151493524,
+            0.1855923436063761
+          ]
+        },
+        "rmse": {
+          "mean": 0.19435706673815697,
+          "std": 0.07956981821183019,
+          "folds": [
+            0.11336275695697301,
+            0.19728698447233953,
+            0.2724214587851584
+          ]
+        },
+        "r2": {
+          "mean": 0.9493068685138283,
+          "std": 0.021479836547267265,
+          "folds": [
+            0.9647583486939636,
+            0.958383574623034,
+            0.924778682224487
+          ]
+        }
+      },
+      "error": null
+    }
+  ],
+  "limitations": [
+    "Cross-validation estimates performance within this dataset, not external industrial generalization.",
+    "Small datasets may have high fold-to-fold variance.",
+    "Feature and target selection must follow the source study and avoid leakage.",
+    "Synthetic factory records are excluded from these scores."
+  ]
+}

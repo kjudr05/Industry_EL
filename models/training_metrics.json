@@ -1,0 +1,33 @@
+{
+  "regression": [
+    {
+      "model": "Random Forest",
+      "MAE": 3.084895487135825,
+      "RMSE": 3.869806061120704,
+      "R2": 0.4668121936567915
+    },
+    {
+      "model": "XGBoost",
+      "MAE": 2.8539373128255208,
+      "RMSE": 3.5939867150323908,
+      "R2": 0.540109177781989
+    }
+  ],
+  "classification": [
+    {
+      "model": "Random Forest Classifier",
+      "Accuracy": 0.8833333333333333,
+      "Precision_macro": 0.7352716630614582,
+      "Recall_macro": 0.6857171554841301,
+      "F1_macro": 0.705972949511355
+    },
+    {
+      "model": "XGBoost Classifier",
+      "Accuracy": 0.88,
+      "Precision_macro": 0.730193661971831,
+      "Recall_macro": 0.6050622740056247,
+      "F1_macro": 0.6336996336996337
+    }
+  ],
+  "target_note": "Metrics are against synthetic simulator targets; not real-world performance."
+}
